@@ -121,6 +121,7 @@ main {
     }
 }
 
+
 @media only screen and (max-width: 600px) {
     .pagination button {
         padding: 0.5rem 0.4rem;
@@ -130,5 +131,53 @@ main {
 @media only screen and (max-width: 400px) {
     .pagination button {
         padding: 0.5rem 0.5rem;
+    }
+}
+
+
+.search-bar {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar input {
+        margin-bottom: 0.5rem;
+    }
+
+    .search-bar button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .search-bar button {
+        width: 100%;
+        margin-left: 0; 
     }
 }
